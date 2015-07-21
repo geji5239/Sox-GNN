@@ -109,6 +109,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserControllers\LoginController.cs" />
+    <Compile Include="DBHelper\CommandInfo.cs" />
+    <Compile Include="DBHelper\DBHelerSQL.cs" />
+    <Compile Include="DBHelper\ConnectionS.cs" />
+    <Compile Include="DBHelper\DESEncrypt.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -295,6 +300,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\web.config.pubxml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
