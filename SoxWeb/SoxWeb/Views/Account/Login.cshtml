@@ -1,7 +1,4 @@
-﻿@{
-    ViewBag.Title = "Index";
-}
-
+﻿@model SoxWeb.Models.AccountLogin
 
 <!DOCTYPE html>
 <html>
@@ -17,25 +14,27 @@
     <script src="~/Content/lib/backbone/underscore-min.js"></script>
     <script src="~/Content/js/settings.js"> </script>
 </head>
-<body>
+<body style="background-image:url(../../Content/img/soxflag.png);">
     <div class="single-widget-container">
         <section class="widget login-widget">
             <header class="text-align-center">
                 <h4>Login to your account</h4>
             </header>
             <div class="body">
-                <form class="no-margin"
-                      action="index.html" method="get">
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+                {
+                    @Html.ValidationSummary(true)
+                    @*<form class="no-margin"
+                        action="/Home/Index" method="get">*@
                     <fieldset>
                         <div class="form-group no-margin">
-                            <label for="email">Email</label>
-
+                            <label for="username">Username</label>
                             <div class="input-group input-group-lg">
                                 <span class="input-group-addon">
                                     <i class="eicon-user"></i>
                                 </span>
-                                <input id="email" type="email" class="form-control input-lg"
-                                       placeholder="Your Email">
+                                <input id="username" type="username" class="form-control input-lg"
+                                    placeholder="Your Username">                              
                             </div>
 
                         </div>
@@ -47,7 +46,7 @@
                                 <span class="input-group-addon">
                                     <i class="fa fa-lock"></i>
                                 </span>
-                                <input id="password" type="password" class="form-control input-lg"
+                                <input id="password" name="password" type="password" class="form-control input-lg"
                                        placeholder="Your Password">
                             </div>
 
@@ -60,10 +59,10 @@
                         </button>
                         <div class="forgot"><a class="forgot" href="#">Forgot Username or Password?</a></div>
                     </div>
-                </form>
+                }
+                @*</form>*@
             </div>
-            <footer>
-            </footer>
+            <footer></footer>
         </section>
     </div>
 </body>

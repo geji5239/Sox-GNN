@@ -1620,7 +1620,25 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6)
 }
 
-.form-control[disabled], textarea[disabled], input[type="text"][disabled], input[type="password"][disabled], input[type="datetime"][disabled], input[type="datetime-local"][disabled], input[type="date"][disabled], input[type="month"][disabled], input[type="time"][disabled], input[type="week"][disabled], input[type="number"][disabled], input[type="email"][disabled], input[type="url"][disabled], input[type="search"][disabled], input[type="tel"][disabled], input[type="color"][disabled], .uneditable-input[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+.form-control[disabled], 
+textarea[disabled], 
+input[type="text"][disabled], 
+input[type="password"][disabled], 
+input[type="datetime"][disabled], 
+input[type="datetime-local"][disabled], 
+input[type="date"][disabled], 
+input[type="month"][disabled], 
+input[type="time"][disabled], 
+input[type="week"][disabled], 
+input[type="number"][disabled], 
+input[type="email"][disabled], 
+input[type="url"][disabled], 
+input[type="search"][disabled], 
+input[type="tel"][disabled], 
+input[type="color"][disabled], 
+.uneditable-input[disabled], 
+.form-control[readonly], 
+fieldset[disabled] .form-control {
     cursor: not-allowed;
     background-color: #eee
 }
@@ -6336,7 +6354,22 @@ legend small {
     font-size: 14px
 }
 
-textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="username"],
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], .uneditable-input {
     color: #555;
     min-height: 30px;
     padding-left: 6px;
@@ -6349,7 +6382,23 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     transition: border linear 0.2s, box-shadow linear 0.2s
 }
 
-textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+textarea:focus, 
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="date"]:focus, 
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="username"]:focus,
+input[type="url"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="username"]:focus,
+input[type="color"]:focus, .uneditable-input:focus {
     -webkit-box-shadow: inset 0 1px 1px rgba(97, 143, 176, 0.075);
     box-shadow: inset 0 1px 1px rgba(97, 143, 176, 0.075);
     border-color: #618fb0;
@@ -6358,7 +6407,74 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 }
 
-textarea.form-control[type=search], textarea.form-control.search, textarea[class*="col-"][type=search], textarea[class*="col-"].search, input[type="text"].form-control[type=search], input[type="text"].form-control.search, input[type="text"][class*="col-"][type=search], input[type="text"][class*="col-"].search, input[type="password"].form-control[type=search], input[type="password"].form-control.search, input[type="password"][class*="col-"][type=search], input[type="password"][class*="col-"].search, input[type="datetime"].form-control[type=search], input[type="datetime"].form-control.search, input[type="datetime"][class*="col-"][type=search], input[type="datetime"][class*="col-"].search, input[type="datetime-local"].form-control[type=search], input[type="datetime-local"].form-control.search, input[type="datetime-local"][class*="col-"][type=search], input[type="datetime-local"][class*="col-"].search, input[type="date"].form-control[type=search], input[type="date"].form-control.search, input[type="date"][class*="col-"][type=search], input[type="date"][class*="col-"].search, input[type="month"].form-control[type=search], input[type="month"].form-control.search, input[type="month"][class*="col-"][type=search], input[type="month"][class*="col-"].search, input[type="time"].form-control[type=search], input[type="time"].form-control.search, input[type="time"][class*="col-"][type=search], input[type="time"][class*="col-"].search, input[type="week"].form-control[type=search], input[type="week"].form-control.search, input[type="week"][class*="col-"][type=search], input[type="week"][class*="col-"].search, input[type="number"].form-control[type=search], input[type="number"].form-control.search, input[type="number"][class*="col-"][type=search], input[type="number"][class*="col-"].search, input[type="email"].form-control[type=search], input[type="email"].form-control.search, input[type="email"][class*="col-"][type=search], input[type="email"][class*="col-"].search, input[type="url"].form-control[type=search], input[type="url"].form-control.search, input[type="url"][class*="col-"][type=search], input[type="url"][class*="col-"].search, input[type="search"].form-control[type=search], input[type="search"].form-control.search, input[type="search"][class*="col-"][type=search], input[type="search"][class*="col-"].search, input[type="tel"].form-control[type=search], input[type="tel"].form-control.search, input[type="tel"][class*="col-"][type=search], input[type="tel"][class*="col-"].search, input[type="color"].form-control[type=search], input[type="color"].form-control.search, input[type="color"][class*="col-"][type=search], input[type="color"][class*="col-"].search, .uneditable-input.form-control[type=search], .uneditable-input.form-control.search, .uneditable-input[class*="col-"][type=search], .uneditable-input[class*="col-"].search {
+textarea.form-control[type=search], 
+textarea.form-control.search, 
+textarea[class*="col-"][type=search], 
+textarea[class*="col-"].search, 
+input[type="text"].form-control[type=search], 
+input[type="text"].form-control.search, 
+input[type="text"][class*="col-"][type=search], 
+input[type="text"][class*="col-"].search, 
+input[type="password"].form-control[type=search], 
+input[type="password"].form-control.search, 
+input[type="password"][class*="col-"][type=search], 
+input[type="password"][class*="col-"].search, 
+input[type="datetime"].form-control[type=search], 
+input[type="datetime"].form-control.search, 
+input[type="datetime"][class*="col-"][type=search], 
+input[type="datetime"][class*="col-"].search, 
+input[type="datetime-local"].form-control[type=search], 
+input[type="datetime-local"].form-control.search, 
+input[type="datetime-local"][class*="col-"][type=search], 
+input[type="datetime-local"][class*="col-"].search, 
+input[type="date"].form-control[type=search], 
+input[type="date"].form-control.search, 
+input[type="date"][class*="col-"][type=search], 
+input[type="date"][class*="col-"].search, 
+input[type="month"].form-control[type=search], 
+input[type="month"].form-control.search, 
+input[type="month"][class*="col-"][type=search], 
+input[type="month"][class*="col-"].search, 
+input[type="time"].form-control[type=search], 
+input[type="time"].form-control.search, 
+input[type="time"][class*="col-"][type=search], 
+input[type="time"][class*="col-"].search, 
+input[type="week"].form-control[type=search], 
+input[type="week"].form-control.search, 
+input[type="week"][class*="col-"][type=search], 
+input[type="week"][class*="col-"].search, 
+input[type="number"].form-control[type=search], 
+input[type="number"].form-control.search, 
+input[type="number"][class*="col-"][type=search], 
+input[type="number"][class*="col-"].search, 
+input[type="email"].form-control[type=search], 
+input[type="email"].form-control.search, 
+input[type="email"][class*="col-"][type=search], 
+input[type="email"][class*="col-"].search, 
+input[type="username"].form-control[type=search], 
+input[type="username"].form-control.search, 
+input[type="username"][class*="col-"][type=search], 
+input[type="username"][class*="col-"].search,
+input[type="url"].form-control[type=search], 
+input[type="url"].form-control.search, 
+input[type="url"][class*="col-"][type=search], 
+input[type="url"][class*="col-"].search, 
+input[type="search"].form-control[type=search], 
+input[type="search"].form-control.search, 
+input[type="search"][class*="col-"][type=search], 
+input[type="search"][class*="col-"].search, 
+input[type="tel"].form-control[type=search], 
+input[type="tel"].form-control.search, 
+input[type="tel"][class*="col-"][type=search], 
+input[type="tel"][class*="col-"].search, 
+input[type="color"].form-control[type=search], 
+input[type="color"].form-control.search, 
+input[type="color"][class*="col-"][type=search], 
+input[type="color"][class*="col-"].search, 
+.uneditable-input.form-control[type=search], 
+.uneditable-input.form-control.search, 
+.uneditable-input[class*="col-"][type=search], 
+.uneditable-input[class*="col-"].search {
     padding-left: 26px
 }
 
@@ -6382,7 +6498,13 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     border: 1px solid transparent
 }
 
-.btn-group + .help-block, input + .help-block, select + .help-block, textarea + .help-block, .uneditable-input + .help-block, .input-prepend + .help-block, .input-append + .help-block {
+.btn-group + .help-block, 
+input + .help-block, 
+select + .help-block, 
+textarea + .help-block, 
+.uneditable-input + .help-block, 
+.input-prepend + .help-block, 
+.input-append + .help-block {
     margin-top: 5px
 }
 
@@ -6395,7 +6517,12 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     line-height: 20px
 }
 
-.form-horizontal input + .help-block, .form-horizontal select + .help-block, .form-horizontal textarea + .help-block, .form-horizontal .uneditable-input + .help-block, .form-horizontal .input-prepend + .help-block, .form-horizontal .input-append + .help-block {
+.form-horizontal input + .help-block, 
+.form-horizontal select + .help-block, 
+.form-horizontal textarea + .help-block, 
+.form-horizontal .uneditable-input + .help-block, 
+.form-horizontal .input-prepend + .help-block, 
+.form-horizontal .input-append + .help-block {
     margin-top: 5px
 }
 
@@ -16316,7 +16443,11 @@ input.parsley-error {
     margin: 15px 0 25px 0
 }
 
-.login-widget input[type="email"], .login-widget input[type="password"], .registration-widget input[type="email"], .registration-widget input[type="password"] {
+.login-widget input[type="email"],
+.login-widget input[type="username"], 
+.login-widget input[type="password"], 
+.registration-widget input[type="email"], 
+.registration-widget input[type="password"] {
     font-size: 13px
 }
 
